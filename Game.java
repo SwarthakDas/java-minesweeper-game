@@ -38,6 +38,11 @@ public class Game{
         colSize=sc.nextInt();
         System.out.print("Enter number of mines: ");
         mines=sc.nextInt();
+        while(mines>=(rowSize-1)*(colSize-1)){
+            System.out.println("Invalid number of mines");
+            System.out.print("Enter number of mines: ");
+            mines=sc.nextInt();
+        }
         char board[][]=new char[rowSize][colSize];
         char res[][]=new char[rowSize][colSize];
 
