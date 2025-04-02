@@ -105,20 +105,6 @@ public class Game{
             }
         }
 
-        //test result
-        for(int i=0;i<=board.length-1;i++){
-            for(int j=0;j<=board[0].length-1;j++){
-                if(i==0){
-                    System.out.print((j)+" ");
-                }
-                else if(j==0){
-                    System.out.print((i)+" ");
-                }
-                else System.out.print(res[i][j]+" ");
-            }
-            System.out.println();
-        }
-
         //main loop starts
         int count=((rowSize-1)*(colSize-1))-1; //count to check if count==no. of mines? if yes then user wins
 
